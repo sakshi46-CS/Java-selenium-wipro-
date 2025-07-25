@@ -1,9 +1,9 @@
 package project;
 
 interface Attendance{
-	void startattendancetimer(int seconds);
+	void startattendancetimer(int seconds) throws InterruptedException;
 }
-public class Attendancesystem {
+public class Attendancesystem implements Attendance {
 public void startattendancetimer(int seconds) throws InterruptedException {
 	System.out.println("Attendace timer is being started");
 	for(int i=seconds;i>0;i--) {

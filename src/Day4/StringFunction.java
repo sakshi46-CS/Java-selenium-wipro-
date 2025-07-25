@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	str.length();
 	str.charAt(5);
 	String substr=str.substring(3,9);
-	// 4. toLowerCase()
+	// 4. toLowerCase()11111
     System.out.println("String in lowercase: " + str.toLowerCase()); 
     // 5. toUpperCase()
     System.out.println("String in uppercase: " + str.toUpperCase());
@@ -30,13 +30,7 @@ public static void main(String[] args) {
     for (String word : words) {
         System.out.println(word);
     }
-    // Output:
-    // I
-    // am
-    // an
-    // employee
-    // of
-    // ITC
+   
     // 13. startsWith() - Check if string starts with a prefix
     System.out.println("Starts with 'I am': " + str.startsWith("I am"));
     // 14. endsWith() - Check if string ends with a suffix
