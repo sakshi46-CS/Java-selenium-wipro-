@@ -24,3 +24,4 @@ public static void main(String[] args) {
 //It can be overriden
 //can have implementation 
 //should create object to call
+//Default methods can have only in interface

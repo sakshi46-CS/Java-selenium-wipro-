@@ -9,6 +9,7 @@ public class ReadCSV {
         String filepath = "C:\\Users\\DELL\\Desktop\\mydata.csv";
 
         try {
+        	
             // Open file for reading
             BufferedReader br = new BufferedReader(new FileReader(filepath));
             String line = br.readLine();
