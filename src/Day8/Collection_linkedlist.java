@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	System.out.println("First fruit:"+fruits.getFirst());
 	System.out.println("Last fruit:"+fruits.getLast());
 	
-	fruits.addFirst("Kiwi");
+	  
 	// Remove elements
     fruits.remove("Banana");
     fruits.removeFirst();

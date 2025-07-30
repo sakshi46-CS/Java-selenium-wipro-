@@ -14,7 +14,7 @@ public static void main(String[] args) {
 	System.out.println(setdata);
 	Iterator i=setdata.iterator();
 	while(i.hasNext()) {
-		System.out.println(i.next());
+		System.out.println(i.next());//print one by one
 	}
 }
 }
