@@ -5,12 +5,11 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-// ✅ Make class Serializable
-class Students implements Serializable {
-    String name;
-    int age;
+class Stud implements Serializable {
+    private String name;
+    private int age;
 
-    Students(String name, int age) {
+    public Stud(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -23,18 +22,20 @@ class Students implements Serializable {
     public void setAge(int age) { this.age = age; }
 }
 
+// Main class to perform serialization
 public class Serialization {
     public static void main(String[] args) {
         try {
-            Students s1 = new Students("sakshi", 45);
+            // Create and modify student object
+            Stud s1 = new Stud("sakshi", 45);
             s1.setName("girish");
             s1.setAge(56);
 
-      
+            // Serialize the object to file
             FileOutputStream out = new FileOutputStream("C:\\Users\\DELL\\Desktop\\Hii.txt");
             ObjectOutputStream output = new ObjectOutputStream(out);
 
-            output.writeObject(s1);
+            output.writeObject(s1); // Write object to file
 
             output.close();
             out.close();
