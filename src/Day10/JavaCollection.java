@@ -39,10 +39,10 @@ public class JavaCollection {
         d.add(jc.new Department("Account", 15000, 35000));
         d.add(jc.new Department("Sales", 45000, 20000)); // profitable
 
-        // ✅ Sort using lambda
+        //  Sort using lambda
        d.sort((dept1, dept2) -> Double.compare(dept2.getProfit(), dept1.getProfit())); // descending order
 
-        // ✅ Print using lambda
+        //  Print using lambda
         d.forEach(dept -> System.out.println(dept));
     }
 }
